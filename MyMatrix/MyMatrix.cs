@@ -1,10 +1,37 @@
-﻿using Microsoft.VisualBasic;
+﻿MyMatrix m1 = new(3, 5);
+MyMatrix m2 = new(3, 5);
+MyMatrix m3 = new(2, 2);
+MyMatrix m6 = new(5, 7);
+m1.Print();
+m2.Print();
+m3.Print();
+try
+{
+    var m4 = m1 + m2;
+    m4.Print();
+    m4 *= 2;
+    m4.Print();
+    m4 /= 2;
+    m4.Print();
+    var m5 = m1 - m2;
+    m5.Print();
+    var m7 = m1 * m6;
+    m7.Print();
+    var m8 = m1 * m2;
+    m8.Print();
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 class MyMatrix
 {
     int[,] _matrix;
     private int _m;
     private int _n;
+    private static int beginning;
+    private static int ending;
 
     public MyMatrix(int m, int n)
     {
@@ -17,18 +44,24 @@ class MyMatrix
         _m = m;
         _n = n;
         _matrix = new int[_m, _n];
+        RandomMatrix();
     }
 
     private void RandomMatrix()
     {
         Random rand = new();
-        int first = Convert.ToInt32(Console.ReadLine());
-        int second = Convert.ToInt32(Console.ReadLine());
+        if (beginning == 0 && ending == 0)
+        {
+            Console.WriteLine("Введите диапазон генерации чисел");
+            beginning = Convert.ToInt32(Console.ReadLine());
+            ending = Convert.ToInt32(Console.ReadLine());
+        }
+
         for (int i = 0; i < _matrix.GetLength(0); ++i)
         {
             for (int j = 0; j < _matrix.GetLength(1); ++j)
             {
-                _matrix[i, j] = rand.Next(first, second);
+                _matrix[i, j] = rand.Next(beginning, ending);
             }
         }
     }
@@ -39,9 +72,10 @@ class MyMatrix
         {
             for (int j = 0; j < _matrix.GetLength(1); ++j)
             {
-                Console.WriteLine($"{this[i, j]}  ");
+                Console.Write("{0,3}", this[i, j]);
             }
         }
+        Console.WriteLine();
     }
 
     public int this[int indexM, int indexN]
