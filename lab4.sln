@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMatrix", "MyMatrix\MyMatrix.csproj", "{BA422458-71A0-420D-BD92-30D0B94D0B8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car", "Car\Car.csproj", "{EA250FCE-BD97-44F5-92FC-63D85FBD5A0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarCatalog", "CarCatalog\CarCatalog.csproj", "{12AB345B-AF36-41E3-B33D-A97B6F802221}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA422458-71A0-420D-BD92-30D0B94D0B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA422458-71A0-420D-BD92-30D0B94D0B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA422458-71A0-420D-BD92-30D0B94D0B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA422458-71A0-420D-BD92-30D0B94D0B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA250FCE-BD97-44F5-92FC-63D85FBD5A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA250FCE-BD97-44F5-92FC-63D85FBD5A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA250FCE-BD97-44F5-92FC-63D85FBD5A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA250FCE-BD97-44F5-92FC-63D85FBD5A0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12AB345B-AF36-41E3-B33D-A97B6F802221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12AB345B-AF36-41E3-B33D-A97B6F802221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12AB345B-AF36-41E3-B33D-A97B6F802221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12AB345B-AF36-41E3-B33D-A97B6F802221}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
